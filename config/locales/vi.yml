@@ -10,6 +10,14 @@ vi:
       log_in: "Đăng nhập"
       english: "Tiếng Anh"
       vietnamese: "Tiếng Việt"
+      user: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      log_out: "Đăng xuất"
+      log_in: "Đăng nhập"
+    error_messages:
+      form_error: "Form chứa"
 
   static_page:
     help:
@@ -30,3 +38,19 @@ vi:
       h2_more: "ứng dụng mẫu."
       test_language: "Ngôn ngữ thử nghiệm:"
       sign_up: "Đăng ký ngay!"
+
+  users:
+    new:
+      main_title: "Đăng kí"
+      title: "Đăng kí"
+      submit: "Tạo tài khoản mới"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác thực mật khẩu"
+
+  controller:
+    users_controller:
+      welcome: "Chào mừng đến với Sample App!"
+    session_controller:
+      danger_text: "Sai mật khẩu hoặc password"

@@ -41,6 +41,15 @@ en:
       log_in: "Log in"
       english: "English"
       vietnamese: "Vietnamese"
+      user: "User"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
+      log_in: "Log in"
+
+    error_messages:
+      form_error: "The form contains"
 
   static_page:
     help:
@@ -61,3 +70,19 @@ en:
       h2_more: "sample application."
       test_language: "Test language: "
       sign_up: "Sign up now!"
+
+  users:
+    new:
+      main_title: "Sign up"
+      title: "Sign up"
+      submit: "Create my account"
+      name: "name"
+      email: "email"
+      password: "password"
+      password_confirmation: "password_confirmation"
+
+  controller:
+    users_controller:
+      welcome: "Welcome to the Sample App!"
+    session_controller:
+      danger_text: "invalid_email_password_combination"

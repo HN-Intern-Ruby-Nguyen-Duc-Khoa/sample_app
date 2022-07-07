@@ -1,0 +1,32 @@
+vi:
+  hello: "xin chào"
+  main_title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+
+  shared:
+    header:
+      sample_app: "Ứng dụng sample"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      log_in: "Đăng nhập"
+      english: "Tiếng Anh"
+      vietnamese: "Tiếng Việt"
+
+  static_page:
+    help:
+      base_title: "Trợ giúp"
+      title: "Trợ giúp"
+      subtitle: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
+      content_href_help: "Trang trợ giúp Hướng dẫn về Rails"
+      subtitle_more: ". Để nhận trợ giúp về ứng dụng mẫu này, hãy xem"
+      content_href_book: "Hướng dẫn Ruby on Rails"
+      em: "book"
+      test_language: "Ngôn ngữ thử nghiệm:"
+
+    home:
+      base_title: "Trang chủ"
+      title: "Chào mừng bạn đến với Ứng dụng Mẫu"
+      h2: "Đây là trang chủ của"
+      content_href_org: "Hướng dẫn Ruby on Rails"
+      h2_more: "ứng dụng mẫu."
+      test_language: "Ngôn ngữ thử nghiệm:"
+      sign_up: "Đăng ký ngay!"

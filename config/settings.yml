@@ -1,0 +1,6 @@
+help:
+  rails_help_href: "http://www.railstutorial.org/help"
+  rails_book_href: "http://www.railstutorial.org/book"
+
+home:
+  rails_org_href: "http://www.railstutorial.org/"

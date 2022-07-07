@@ -41,7 +41,7 @@ vi:
 
   session:
     create:
-      danger_text: "Đăng nhập thất bại"
+      danger_text: "Sai username hoặc mật khẩu"
     new:
       login_title: "Đăng nhập"
       new_user: "Tài khoản mới"
@@ -53,6 +53,17 @@ vi:
       main_title: "Đăng kí"
       title: "Đăng kí"
       submit: "Tạo tài khoản mới"
+    edit:
+      main_title: "Cập nhật hồ sơ"
+      button_text: "Cập nhật"
+      a_text: "Thay đổi"
+      edit_correct_danger: "Vui lòng cập nhật đúng địa chỉ email của bạn"
+      edit_login_danger: "Vui lòng đăng nhập"
+      edit_user_failed: "Cập nhật user thất bại!"
+    new:
+      main_title: "Đăng ký"
+      button_text: "Đăng ký"
+    form:
       name: "Tên"
       email: "Email"
       password: "Mật khẩu"
@@ -62,3 +73,20 @@ vi:
       failed: "Đăng kí thất bại!"
     show:
       show_user_failed: "Hiển thị user thất bại!"
+    update:
+      update_successfully: "Cập nhật thành công!"
+      update_failed: "Cập nhật thất bại!"
+    create:
+      welcome: "Chào mừng đến với Sample App!"
+      failed: "Đăng ký thất bại"
+    destroy:
+      success: "Xóa thành công"
+      danger: "Xóa thất bại"
+    index:
+      title: "Tất cả người dùng"
+      load_user: "Không tìm thấy người dùng"
+    user:
+      delete: "Xóa người dùng"
+      confirm: "Bạn chắc chắn chứ?"
+    load_user:
+      error: "Không tìm thấy user!"

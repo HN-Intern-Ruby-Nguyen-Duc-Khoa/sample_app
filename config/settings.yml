@@ -12,3 +12,4 @@ models:
     email_minium_length: 20
     email_maxinum_length: 255
     password_minium_length: 6
+expires_token: 1

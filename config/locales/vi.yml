@@ -10,6 +10,8 @@ vi:
       log_in: "Đăng nhập"
       english: "Tiếng Anh"
       vietnamese: "Tiếng Việt"
+    error_messages:
+      form_error: "The form contains"
 
   static_page:
     help:
@@ -36,3 +38,17 @@ vi:
       name_too_long: "Tên quá dài"
       email_too_long: "Email quá dài"
       email_too_short: "Email quá ngắn"
+  users:
+    new:
+      main_title: "Đăng kí"
+      title: "Đăng kí"
+      submit: "Tạo tài khoản mới"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác thực mật khẩu"
+    create:
+      welcome: "Chào mừng đến với Sample App!"
+      failed: "Đăng kí thất bại!"
+    show:
+      show_user_failed: "Hiển thị user thất bại!"

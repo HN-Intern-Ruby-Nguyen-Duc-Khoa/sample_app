@@ -16,6 +16,10 @@ vi:
       settings: "Cài đặt"
       log_out: "Đăng xuất"
       log_in: "Đăng nhập"
+      account_activations:
+        edit:
+          activated_success: "Kích hoạt tài khoản thành công!"
+          activated_failed: "Sai đường link kích hoạt!"
     error_messages:
       form_error: "Form chứa"
 
@@ -42,17 +46,24 @@ vi:
   session:
     create:
       danger_text: "Sai username hoặc mật khẩu"
+      activated_failed: "Tài khoản chưa kích hoạt. Kiểm tra email để kích hoạt!"
     new:
       login_title: "Đăng nhập"
       new_user: "Tài khoản mới"
       remember_me: "Hãy ghi nhớ tôi!"
       sign_up : "Đăng kí tài khoản bây giờ!"
 
+  account_activations:
+    edit:
+      activated_success: "kích hoạt thành công!"
+      activated_failed: "kích hoạt thất bại!"
+
   users:
     new:
       main_title: "Đăng kí"
       title: "Đăng kí"
       submit: "Tạo tài khoản mới"
+      button_text: "Đăng ký"
     edit:
       main_title: "Cập nhật hồ sơ"
       button_text: "Cập nhật"
@@ -60,25 +71,18 @@ vi:
       edit_correct_danger: "Vui lòng cập nhật đúng địa chỉ email của bạn"
       edit_login_danger: "Vui lòng đăng nhập"
       edit_user_failed: "Cập nhật user thất bại!"
-    new:
-      main_title: "Đăng ký"
-      button_text: "Đăng ký"
     form:
       name: "Tên"
       email: "Email"
       password: "Mật khẩu"
       password_confirmation: "Xác thực mật khẩu"
-    create:
-      welcome: "Chào mừng đến với Sample App!"
-      failed: "Đăng kí thất bại!"
-    show:
-      show_user_failed: "Hiển thị user thất bại!"
     update:
       update_successfully: "Cập nhật thành công!"
       update_failed: "Cập nhật thất bại!"
     create:
       welcome: "Chào mừng đến với Sample App!"
       failed: "Đăng ký thất bại"
+      check_email: "Kiểm tra tài khoản email để kích hoạt"
     destroy:
       success: "Xóa thành công"
       danger: "Xóa thất bại"
@@ -90,3 +94,15 @@ vi:
       confirm: "Bạn chắc chắn chứ?"
     load_user:
       error: "Không tìm thấy user!"
+    show:
+      show_user_failed: "Hiện thị user thất bại"
+      edit_correct_danger: "Vui lòng cập nhật đúng địa chỉ email của bạn"
+      edit_login_danger: "Vui lòng đăng nhập"
+
+  user_mailer:
+    account_activation:
+      title: "Sample App"
+      hi: "Xin chào"
+      content: "Chào mừng đến với sampple app. Click để kích hoạt tài tài khoản"
+      href_text: "Kích hoạt"
+      subject: "Kích hoạt tài khoản"

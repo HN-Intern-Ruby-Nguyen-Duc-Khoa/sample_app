@@ -30,3 +30,9 @@ vi:
       h2_more: "ứng dụng mẫu."
       test_language: "Ngôn ngữ thử nghiệm:"
       sign_up: "Đăng ký ngay!"
+
+  models:
+    user:
+      name_too_long: "Tên quá dài"
+      email_too_long: "Email quá dài"
+      email_too_short: "Email quá ngắn"

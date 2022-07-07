@@ -10,6 +10,13 @@ en:
       log_in: "Log in"
       english: "English"
       vietnamese: "Vietnamese"
+      user: "User"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      log_out: "Log out"
+      log_in: "Log in"
+
     error_messages:
       form_error: "The form contains"
 
@@ -33,11 +40,13 @@ en:
       test_language: "Test language: "
       sign_up: "Sign up now!"
 
-  models:
-    user:
-      name_too_long: "Name too long"
-      email_too_long: "Email too long"
-      email_too_short: "Email too short"
+  session:
+    create:
+      danger_text: "Login failed"
+    new:
+      login_title: "Login"
+      new_user: "New User"
+
   users:
     new:
       main_title: "Sign up"

@@ -61,8 +61,3 @@ group :development, :test do # Với phiên bản ruby 3.0 và rails 6 trở lê
   gem "rubocop-checkstyle_formatter", require: false
   gem "rubocop-rails", "~> 2.14.0", require: false
 end
-group :development, :test do # Với phiên bản ruby 3.0 và rails 6 trở xuông
-  gem "rubocop", "~> 0.74.0", require: false
-  gem "rubocop-checkstyle_formatter", require: false
-  gem "rubocop-rails", "~> 2.3.2", require: false
-end

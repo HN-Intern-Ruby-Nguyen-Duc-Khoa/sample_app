@@ -4,3 +4,11 @@ help:
 
 home:
   rails_org_href: "http://www.railstutorial.org/"
+
+models:
+  user:
+    valid_email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+    name_length: 10
+    email_minium_length: 20
+    email_maxinum_length: 255
+    password_minium_length: 6

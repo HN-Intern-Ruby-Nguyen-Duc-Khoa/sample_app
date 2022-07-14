@@ -4,3 +4,5 @@ help:
 
 home:
   rails_org_href: "http://www.railstutorial.org/"
+
+expires_token: 1

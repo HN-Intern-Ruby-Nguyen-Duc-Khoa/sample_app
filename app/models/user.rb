@@ -4,9 +4,8 @@ class User < ApplicationRecord
 
   attr_accessor :remember_token
 
-
   validates :name, presence: true, length:
-  {maximum: 10, too_long: "Tên quá dài"}
+  {maximum: 100, too_long: "Tên quá dài"}
 
   validates :email, presence: true,
   length: {
@@ -21,7 +20,8 @@ class User < ApplicationRecord
   validates :password, presence: true, length:
   {minimum: 6}, if: :password
 
-  has_secure_password
+  has_secure_password #password.present=true
+  # ~ password không được nil hay false khi update hay create
 
   class << self
     # hash fn
@@ -54,7 +54,6 @@ class User < ApplicationRecord
     return false unless remember_token
     BCrypt::Password.new(remember_digest).is_password? remember_token
   end
-
 
   private
 

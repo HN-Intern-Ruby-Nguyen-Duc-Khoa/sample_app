@@ -3,7 +3,7 @@
   <aside class="col-md-4">
     <section class="user_info">
       <h1>
-        <%= gravatar_for @user %>
+        <%= gravatar_for @user, size: Settings.users.show.img_size  %>
         <%= @user.name %>
         <%= @user.email %>
       </h1>

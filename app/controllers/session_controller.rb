@@ -7,9 +7,9 @@ class SessionController < ApplicationController
       log_in user
       # checkbox
       params[:session][:remember_me] == '1' ? remember(user) : forget(user)
-      redirect_to user
+      redirect_back_or user
     else
-      flash.now[:danger] = I18n.t "controller.session_controller.danger_text"
+      flash.now[:danger] = t ".danger_text"
       render :new
     end
   end

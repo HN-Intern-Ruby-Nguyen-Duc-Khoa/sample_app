@@ -40,17 +40,32 @@ vi:
       sign_up: "Đăng ký ngay!"
 
   users:
+    edit:
+      main_title: "Cập nhật hồ sơ"
+      button_text: "Cập nhật"
+      a_text: "Thay đổi"
+      edit_correct_danger: "Vui lòng cập nhật đúng địa chỉ email của bạn"
+      edit_login_danger: "Vui lòng đăng nhập"
     new:
-      main_title: "Đăng kí"
-      title: "Đăng kí"
-      submit: "Tạo tài khoản mới"
+      main_title: "Đăng ký"
+      button_text: "Đăng ký"
+    form:
       name: "Tên"
       email: "Email"
       password: "Mật khẩu"
       password_confirmation: "Xác thực mật khẩu"
-
-  controller:
-    users_controller:
+    update:
+      update_successfully: "Update successfully!"
+      update_failed: "Update failed!"
+    create:
       welcome: "Chào mừng đến với Sample App!"
-    session_controller:
-      danger_text: "Sai mật khẩu hoặc password"
+      failed: "Đăng ký thất bại"
+    show:
+      show_user_failed: "Hiện thị user thất bại"
+    destroy:
+      success: "Xóa thành công"
+      danger: "Xóa thất bại"
+
+  session:
+    create:
+      danger_text: "Sai memail hoặc mật khẩu"

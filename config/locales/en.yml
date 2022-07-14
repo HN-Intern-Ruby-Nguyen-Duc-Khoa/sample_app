@@ -72,17 +72,29 @@ en:
       sign_up: "Sign up now!"
 
   users:
+    edit:
+      main_title: "Update your profile"
+      button_text: "Update"
+      a_text: "Change"
+      edit_correct_danger: "Please update your own profile"
+      edit_login_danger: "Please log in."
     new:
       main_title: "Sign up"
-      title: "Sign up"
-      submit: "Create my account"
+      button_text: "Sign up"
+    form:
       name: "name"
       email: "email"
       password: "password"
       password_confirmation: "password_confirmation"
+    update:
+      update_successfully: "Update successfully!"
+      update_failed: "Update failed!"
+    show:
+      show_user_failed: "Show list of user failed"
+    destroy:
+      success: "User deleted"
+      danger: "Delete fail!"
 
-  controller:
-    users_controller:
-      welcome: "Welcome to the Sample App!"
-    session_controller:
-      danger_text: "invalid_email_password_combination"
+  session:
+    create:
+      danger_text: "Wrong email or password"

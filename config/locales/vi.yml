@@ -16,10 +16,6 @@ vi:
       settings: "Cài đặt"
       log_out: "Đăng xuất"
       log_in: "Đăng nhập"
-      account_activations:
-        edit:
-          activated_success: "Kích hoạt tài khoản thành công!"
-          activated_failed: "Sai đường link kích hoạt!"
     error_messages:
       form_error: "Form chứa"
 
@@ -78,3 +74,41 @@ vi:
     create:
       danger_text: "Sai email hoặc mật khẩu"
       activated_failed: "Tài khoản chưa kích hoạt. Kiểm tra email để kích hoạt!"
+    new:
+      forgot_password: "Quên mật khẩu"
+
+  account_activations:
+    edit:
+      activated_success: "Kích hoạt tài khoản thành công!"
+      activated_failed: "Sai đường link kích hoạt!"
+
+  password_resets:
+    create:
+      email_sent_info: "Email đã được gửi cùng đường link thay đổi password"
+      email_not_found: "Email không tìm thấy"
+    update:
+      password_not_empty: "Không được để trống"
+      password_reset_success: "Password được reset"
+    check_expiration:
+      password_reset_expired: "Password reset hết hạn"
+    new:
+      title: "Quên mật khẩu"
+      button_submit: "Submit"
+    edit:
+      title: "Lấy lại mật khẩu"
+      button_update_pass: "Cập nhật mật khẩu"
+
+  user_mailer:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      link_activate: "Kích hoạt"
+      title: "Sample App"
+      hi: "Xin chào"
+      welcome: "Chào mừng đến với Sample App! Click đường link dưới để kích hoạt"
+    password_reset:
+      subject: "Lấy lại mật khẩu"
+      link_reset: "Lấy lại mật khẩu"
+      title: "Lấy lại mật khẩu"
+      sub_title: "Để lấy lại mật khẩu, click đường link dưới"
+      expire_text: "Đường link sẽ hết hạn sau 2 giờ"
+      more_info_text: "Nếu bạn không định thay đổi mật khẩu, làm ơn lờ nó đi"

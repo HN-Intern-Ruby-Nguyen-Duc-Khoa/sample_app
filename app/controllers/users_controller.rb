@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   USER_PARAMS = %i(name email password password_confirmation).freeze
 
   def index
-    #binding.pry
+    # select * from user limit? offset?
     @users = User.paginate(page: params[:page], per_page: Settings.users.per_page)
   end
 
@@ -24,7 +24,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t ".welcome"
+      @user.send_activation_email
+      flash[:info] = t ".check_email"
       redirect_to @user
     else
       flash.now[:danger] = t ".failed"
@@ -72,6 +73,7 @@ class UsersController < ApplicationController
     end
     redirect_to users_url
   end
+
 
   private
 

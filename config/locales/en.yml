@@ -47,7 +47,10 @@ en:
       settings: "Settings"
       log_out: "Log out"
       log_in: "Log in"
-
+      account_activations:
+        edit:
+          activated_success: "Account activated!"
+          activated_failed: "Invalid activation link"
     error_messages:
       form_error: "The form contains"
 
@@ -91,10 +94,15 @@ en:
       update_failed: "Update failed!"
     show:
       show_user_failed: "Show list of user failed"
+      edit_correct_danger: "Please update your own profile"
+      edit_login_danger: "Please log in."
     destroy:
       success: "User deleted"
       danger: "Delete fail!"
+    create:
+      check_email: "Please check your email to activate your account."
 
   session:
     create:
       danger_text: "Wrong email or password"
+      activated_failed: "Account not activated. Check your email for the activation link."

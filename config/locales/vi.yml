@@ -16,6 +16,10 @@ vi:
       settings: "Cài đặt"
       log_out: "Đăng xuất"
       log_in: "Đăng nhập"
+      account_activations:
+        edit:
+          activated_success: "Kích hoạt tài khoản thành công!"
+          activated_failed: "Sai đường link kích hoạt!"
     error_messages:
       form_error: "Form chứa"
 
@@ -62,10 +66,15 @@ vi:
       failed: "Đăng ký thất bại"
     show:
       show_user_failed: "Hiện thị user thất bại"
+      edit_correct_danger: "Vui lòng cập nhật đúng địa chỉ email của bạn"
+      edit_login_danger: "Vui lòng đăng nhập"
     destroy:
       success: "Xóa thành công"
       danger: "Xóa thất bại"
+    create:
+      check_email: "Please check your email to activate your account."
 
   session:
     create:
-      danger_text: "Sai memail hoặc mật khẩu"
+      danger_text: "Sai email hoặc mật khẩu"
+      activated_failed: "Tài khoản chưa kích hoạt. Kiểm tra email để kích hoạt!"

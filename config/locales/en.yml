@@ -10,6 +10,8 @@ en:
       log_in: "Log in"
       english: "English"
       vietnamese: "Vietnamese"
+    error_messages:
+      form_error: "The form contains"
 
   static_page:
     help:
@@ -36,3 +38,17 @@ en:
       name_too_long: "Name too long"
       email_too_long: "Email too long"
       email_too_short: "Email too short"
+  users:
+    new:
+      main_title: "Sign up"
+      title: "Sign up"
+      submit: "Create my account"
+      name: "name"
+      email: "email"
+      password: "password"
+      password_confirmation: "password_confirmation"
+    create:
+      welcome: "Welcome to the Sample App!"
+      failed: "Sign up User failed!"
+    show:
+      show_user_failed: "Show User failed!"

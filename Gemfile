@@ -29,6 +29,7 @@ end
 
 group :test do
   gem "capybara", ">= 3.26"
+  gem "pry-rails"
   gem "selenium-webdriver", ">= 4.0.0.rc1"
   gem "webdrivers"
 end

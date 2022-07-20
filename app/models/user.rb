@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   before_save :downcase_email
 
+  attr_accessor :remember_token
+
   validates :name, presence: true, length:
     {
       maximum: Settings.models.user.name_length,
@@ -24,6 +26,39 @@ class User < ApplicationRecord
     {minimum: Settings.models.user.password_minium_length}, if: :password
 
   has_secure_password
+
+  class << self
+    # hash fn
+    def digest string
+      cost = if ActiveModel::SecurePassword.min_cost
+               BCrypt::Engine::MIN_COST
+             else
+               BCrypt::Engine.cost
+             end
+      BCrypt::Password.create string, cost: cost
+    end
+
+    # random number
+    def new_token
+      SecureRandom.urlsafe_base64
+    end
+  end
+
+  # save token in db
+  def remember_me
+    self.remember_token = User.new_token
+    update remember_digest: User.digest(remember_token)
+  end
+
+  def forget
+    update remember_digest: nil
+  end
+
+  def authenticated? remember_token
+    return false unless remember_token
+
+    BCrypt::Password.new(remember_digest).is_password? remember_token
+  end
 
   private
 

@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     return if @user
 
     flash[:danger] = t ".show_user_failed"
-    redirect_to root_url
+    redirect_to root_path
   end
 
   def create

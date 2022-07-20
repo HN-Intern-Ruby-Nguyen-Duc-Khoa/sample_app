@@ -10,8 +10,14 @@ vi:
       log_in: "Đăng nhập"
       english: "Tiếng Anh"
       vietnamese: "Tiếng Việt"
+      user: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      log_out: "Đăng xuất"
+      log_in: "Đăng nhập"
     error_messages:
-      form_error: "The form contains"
+      form_error: "Form chứa"
 
   static_page:
     help:
@@ -33,11 +39,13 @@ vi:
       test_language: "Ngôn ngữ thử nghiệm:"
       sign_up: "Đăng ký ngay!"
 
-  models:
-    user:
-      name_too_long: "Tên quá dài"
-      email_too_long: "Email quá dài"
-      email_too_short: "Email quá ngắn"
+  session:
+    create:
+      danger_text: "Đăng nhập thất bại"
+    new:
+      login_title: "Đăng nhập"
+      new_user: "Tài khoản mới"
+
   users:
     new:
       main_title: "Đăng kí"

@@ -46,6 +46,8 @@ vi:
       a_text: "Thay đổi"
       edit_correct_danger: "Vui lòng cập nhật đúng địa chỉ email của bạn"
       edit_login_danger: "Vui lòng đăng nhập"
+      previous_label: "Trang trước"
+      next_label: "Trang tiếp"
     new:
       main_title: "Đăng ký"
       button_text: "Đăng ký"
@@ -64,6 +66,8 @@ vi:
       show_user_failed: "Hiện thị user thất bại"
       edit_correct_danger: "Vui lòng cập nhật đúng địa chỉ email của bạn"
       edit_login_danger: "Vui lòng đăng nhập"
+      previous_label: "Trang trước"
+      next_label: "Trang tiếp"
     destroy:
       success: "Xóa thành công"
       danger: "Xóa thất bại"

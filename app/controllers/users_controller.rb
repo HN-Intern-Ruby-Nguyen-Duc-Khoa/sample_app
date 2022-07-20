@@ -5,8 +5,7 @@ class UsersController < ApplicationController
   USER_PARAMS = %i(name email password password_confirmation).freeze
 
   def index
-    # select * from user limit? offset?
-    @users = User.paginate(page: params[:page], per_page: Settings.users.per_page)
+    @pagy, @users = pagy(User.all, items: Settings.users.per_page)
   end
 
   def new
@@ -15,6 +14,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by id: params[:id]
+    @pagy, @microposts = pagy(@user.microposts.recent_posts, items: Settings.users.per_page)
     return if @user
 
     flash[:danger] = t ".show_user_failed"
@@ -73,7 +73,6 @@ class UsersController < ApplicationController
     end
     redirect_to users_url
   end
-
 
   private
 

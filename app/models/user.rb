@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i.freeze
   before_save :downcase_email
   before_create :create_activation_digest
@@ -81,6 +82,10 @@ class User < ApplicationRecord
     # field trong db?
     # binding.pry
     reset_sent_at < 2.hours.ago
+  end
+
+  def feed
+    microposts.recent_posts
   end
 
   private

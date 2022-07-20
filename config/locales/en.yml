@@ -92,11 +92,16 @@ en:
       show_user_failed: "Show list of user failed"
       edit_correct_danger: "Please update your own profile"
       edit_login_danger: "Please log in."
+      previous_label: "Previous"
+      next_label: "Next"
     destroy:
       success: "User deleted"
       danger: "Delete fail!"
     create:
       check_email: "Please check your email to activate your account."
+    index:
+      previous_label: "Previous"
+      next_label: "Next"
 
   session:
     create:

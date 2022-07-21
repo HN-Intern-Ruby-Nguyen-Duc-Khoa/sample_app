@@ -1,5 +1,13 @@
 class User < ApplicationRecord
   has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name, # 1-n, liên kết trung gian
+  foreign_key: :follower_id, dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+  foreign_key: :followed_id, dependent: :destroy
+  # ????????
+  has_many :following, through: :active_relationships, source: :followed # through thông qua property active_relationships do là liên kết n-n
+  has_many :followers, through: :passive_relationships, source: :follower
+
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i.freeze
   before_save :downcase_email
   before_create :create_activation_digest
@@ -85,7 +93,21 @@ class User < ApplicationRecord
   end
 
   def feed
-    microposts.recent_posts
+    #microposts.recent_posts following_ids << id
+    binding.pry
+    Micropost.where user_id: (following_ids << id) # following_ids ~ id của các following, following_ids ~ following.id ???
+  end
+
+  def follow other_user #Follows a user.
+    following << other_user
+  end
+
+  def unfollow other_user #Unfollows a user.
+    following.delete other_user
+  end
+
+  def following? other_user #follow other_user or not?
+    following.include? other_user
   end
 
   private

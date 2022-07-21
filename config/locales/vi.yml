@@ -1,6 +1,7 @@
 vi:
   hello: "xin chào"
   main_title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+  edit_login_danger: "Vui lòng đăng nhập"
 
   shared:
     header:
@@ -45,7 +46,6 @@ vi:
       button_text: "Cập nhật"
       a_text: "Thay đổi"
       edit_correct_danger: "Vui lòng cập nhật đúng địa chỉ email của bạn"
-      edit_login_danger: "Vui lòng đăng nhập"
       previous_label: "Trang trước"
       next_label: "Trang tiếp"
     new:
@@ -65,7 +65,6 @@ vi:
     show:
       show_user_failed: "Hiện thị user thất bại"
       edit_correct_danger: "Vui lòng cập nhật đúng địa chỉ email của bạn"
-      edit_login_danger: "Vui lòng đăng nhập"
       previous_label: "Trang trước"
       next_label: "Trang tiếp"
     destroy:

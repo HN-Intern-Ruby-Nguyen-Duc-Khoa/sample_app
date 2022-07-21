@@ -33,6 +33,8 @@ en:
   hello: "Hello"
   main_title: "Ruby on Rails Tutorial Sample App"
 
+  edit_login_danger: "Please log in."
+
   shared:
     header:
       sample_app: "sample app"
@@ -76,7 +78,6 @@ en:
       button_text: "Update"
       a_text: "Change"
       edit_correct_danger: "Please update your own profile"
-      edit_login_danger: "Please log in."
     new:
       main_title: "Sign up"
       button_text: "Sign up"
@@ -91,7 +92,6 @@ en:
     show:
       show_user_failed: "Show list of user failed"
       edit_correct_danger: "Please update your own profile"
-      edit_login_danger: "Please log in."
       previous_label: "Previous"
       next_label: "Next"
     destroy:

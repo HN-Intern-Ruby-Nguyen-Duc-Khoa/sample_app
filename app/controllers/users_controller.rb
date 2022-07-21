@@ -74,6 +74,20 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def following
+    @title = "Following"
+    @user = User.find_by id: params[:id]
+    @pagy, @users = pagy(@user.following, items: Settings.following.per_page)
+    render "show_follow"
+  end
+
+  def followers
+    @title = "Followers"
+    @user = User.find_by id: params[:id]
+    @pagy, @users = pagy(@user.followers, items: Settings.follower.per_page)
+    render "show_follow"
+  end
+
   private
 
   def user_params

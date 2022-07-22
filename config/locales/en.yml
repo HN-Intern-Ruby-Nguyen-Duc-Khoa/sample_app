@@ -41,19 +41,28 @@ en:
       sign_up: "Sign up now!"
 
   session:
-    create:
-      danger_text: "Login failed"
     new:
       login_title: "Login"
       new_user: "New User"
       remember_me: "Remember Me!"
       sign_up : "Sign up now!"
+    create:
+      danger_text: "Wrong email or password"
 
   users:
     new:
       main_title: "Sign up"
       title: "Sign up"
       submit: "Create my account"
+      button_text: "Sign up"
+    edit:
+      main_title: "Update your profile"
+      button_text: "Update"
+      a_text: "Change"
+      edit_correct_danger: "Please update your own profile"
+      edit_login_danger: "Please log in."
+      edit_user_failed: "Edit user failed!"
+    form:
       name: "name"
       email: "email"
       password: "password"
@@ -61,5 +70,19 @@ en:
     create:
       welcome: "Welcome to the Sample App!"
       failed: "Sign up User failed!"
+    update:
+      update_successfully: "Update successfully!"
+      update_failed: "Update failed!"
     show:
-      show_user_failed: "Show User failed!"
+      show_user_failed: "Show list of user failed"
+    destroy:
+      success: "User deleted"
+      danger: "Delete fail!"
+    index:
+      title: "All users"
+      load_user: "Not Found User!"
+    user:
+      delete: "Delete"
+      confirm: "You sure?"
+    load_user:
+      error: "Not found user!"

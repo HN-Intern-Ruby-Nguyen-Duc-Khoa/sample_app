@@ -1,9 +1,11 @@
 class User < ApplicationRecord
   VALID_EMAIL_REGEX = Settings.models.user.valid_email_regex
-
+  USER_PARAMS = %i(name email password password_confirmation).freeze
   before_save :downcase_email
 
   attr_accessor :remember_token
+
+  scope :order_by_name, ->{order name: :desc}
 
   validates :name, presence: true, length:
     {
@@ -44,7 +46,6 @@ class User < ApplicationRecord
     end
   end
 
-  # save token in db
   def remember_me
     self.remember_token = User.new_token
     update remember_digest: User.digest(remember_token)

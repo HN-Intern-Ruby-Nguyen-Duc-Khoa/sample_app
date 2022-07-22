@@ -12,4 +12,11 @@ models:
     email_minium_length: 20
     email_maxinum_length: 255
     password_minium_length: 6
+users:
+  email_href: "http://gravatar.com/emails"
+  per_page: 5
+  show:
+    img_size: 50
+  img_size: 50
+
 expires_token: 1

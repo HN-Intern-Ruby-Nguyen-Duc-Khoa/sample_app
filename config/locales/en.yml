@@ -16,7 +16,10 @@ en:
       settings: "Settings"
       log_out: "Log out"
       log_in: "Log in"
-
+      account_activations:
+        edit:
+          activated_success: "Account activated!"
+          activated_failed: "Invalid activation link"
     error_messages:
       form_error: "The form contains"
 
@@ -48,6 +51,7 @@ en:
       sign_up : "Sign up now!"
     create:
       danger_text: "Wrong email or password"
+      activated_failed: "Account not activated. Check your email for the activation link."
 
   users:
     new:
@@ -70,6 +74,7 @@ en:
     create:
       welcome: "Welcome to the Sample App!"
       failed: "Sign up User failed!"
+      check_email: "Please check your email to activate your account."
     update:
       update_successfully: "Update successfully!"
       update_failed: "Update failed!"
@@ -86,3 +91,18 @@ en:
       confirm: "You sure?"
     load_user:
       error: "Not found user!"
+      edit_correct_danger: "Please update your own profile"
+      edit_login_danger: "Please log in."
+
+  user_mailer:
+    account_activation:
+      title: "Sample App"
+      hi: "Hi"
+      content: "Welcome to the Sample App! Click on the link below to activate your account:"
+      href_text: "Activate"
+      subject: "Account activation"
+
+  account_activations:
+    edit:
+      activated_success: "Activate success!"
+      activated_failed: "Activate failed!"

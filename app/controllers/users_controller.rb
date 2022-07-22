@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :logged_in_user, except: %i(create new index)
   before_action :load_user, except: %i(create new index)
   before_action :correct_user, only: %i(edit update)
+  USER_PARAMS = %i(name email password password_confirmation).freeze
 
   def index
     @pagy, @users = pagy(User.all.order_by_name, items: Settings.users.per_page)
@@ -21,7 +22,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t ".welcome"
+      @user.send_activation_email
+      flash[:info] = t ".check_email"
       redirect_to @user
     else
       flash.now[:danger] = t ".failed"

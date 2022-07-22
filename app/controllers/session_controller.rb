@@ -9,9 +9,15 @@ class SessionController < ApplicationController
   def create
     @user = User.find_by email: params[:session][:email].downcase
     if @user&.authenticate params[:session][:password]
-      log_in @user
-      check_remember_me @user
-      redirect_to @user
+      if @user.activated?
+        log_in @user
+        check_remember_me @user
+        redirect_to @user
+      else
+        message = t ".activated_failed"
+        flash[:warning] = message
+        redirect_to root_path
+      end
     else
       render_new
     end
